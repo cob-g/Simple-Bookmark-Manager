@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link href='../src/input.css' rel='stylesheet'>
+    <link href='../dist/output.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body class="font-Poppins selection:bg-sky-50 selection:text-sky-600 overflow-x-hidden scroll-smooth">
+
+    <div class=" bg-Purple pt-2 sticky h-2 top-0 right-0 z-40" id="scroll-progress"></div>
+    <header>
+        <nav class="container flex items-center py-8 sm:pt-12">
+            <div class="py-1">
+                <img src="./img/logo-bookmark.svg" alt="">
+            </div>
+
+            <ul class="hidden sm:flex flex-1 gap-12 justify-end items-center uppercase">
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#feature">Feature</a></li>
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#pricing">Pricing</a></li>
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#contact">Contact</a></li>
+                <button class="bg-Red text-white rounded-md px-7 py-3 uppercase hover:bg-White hover:text-black transition">Login</button>
+            </ul>
+
+            <div class="flex sm:hidden flex-1 justify-end items-start">
+                <i class="text-3xl fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+        <!-- sidebar -->
+        <!-- <div class=" flex-col hidden bg-Purple w-full flex-wrap items-center sticky top-0">
+            <div class="py-1 mb-5">
+                <img src="./img/logo-bookmark.svg" alt="">
+            </div>
+
+            <ul class="flex flex-col flex-1 justify-end items-center uppercase  mb-8">
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#feature">Feature</a></li>
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#pricing">Pricing</a></li>
+                <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#contact">Contact</a></li>
+                <button class="bg-Red text-white rounded-md px-7 py-3 uppercase hover:bg-White hover:text-black transition mb-5">Login</button>
+                
+            </ul>
+        </div> -->
+    
+
+    <!-- hero -->
+    <section class="relative ">
+        <div class="container flex flex-col-reverse lg:flex-row text-center gap-12 mt-14 lg:mt-28">
+            <!-- content -->
+            <div class="flex flex-1 flex-col items-center lg:items-start">
+                <h2 class="text-Blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6">A Simple Bookmark Manager</h2>
+                <p class="text-Grey text-lg text-center lg:text=left mb-6">A clean and simple interace to organize your
+                    favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="flex flex-wrap gap-6 justify-center">
+                    <button class="flex btn btn-violet hover-violet text-white">Get it on Chrome</button>
+                    <button class="bg-White btn btn-white hover:bg-Purple hover:text-white">Get it on Firefox</button>
+                </div>
+            </div>
+
+            <!-- image -->
+            <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+                <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./img/hero-bg.png" alt="hero-bg">
+            </div>
+
+        </div>
+
+        <!-- rounded -->
+        <div
+            class="hidden lg:block overflow-hidden bg-Purple rounded-l-full w-1/2 h-80 right-0 top-32 lg:-bottom-28 lg:-right-36 absolute hover:bg-White transition">
+        </div>
+
+
+    </section>
+
+    <!-- feature -->
+    <section class="bg-White py-20 my-20 mt-28" id="feature">
+        <!-- heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+            <h1 class="text-3xl text-center text-Blue">Feature</h1>
+            <p class="text-Grey text-center mt-4">Our aim is to make it quick and easy for you to access your favorite
+                website. Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+
+        <!-- feature #1 -->
+        <div class="relative mt-20 lg:mt-24 ">
+            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+
+                <!-- image -->
+                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                        src="./img/illustration-features-tab-1.png" alt="">
+                </div>
+
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-Blue">Bookmark in one click</h1>
+                    <p class="text-Grey mt-4">Organize your bookmark however you like. Our simple drag-and-drop
+                        interface gives you complete control over how you manage your favourite sites.</p>
+                    <button class="btn btn-violet hover-violet text-white mt-8">More info</button>
+                </div>
+            </div>
+
+            <!-- rounded -->
+            <div
+                class="hidden lg:block overflow-hidden bg-Purple rounded-r-full w-1/2 h-80 -left-32 top-32 absolute hover:bg-White transition">
+            </div>
+        </div>
+        <!-- feature #2 -->
+        <div class="relative mt-20 lg:mt-52">
+            <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+
+                <!-- image -->
+                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                        src="./img/illustration-features-tab-2.png" alt="">
+                </div>
+
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-Blue">Intelligent search</h1>
+                    <p class="text-Grey mt-4">Our powerful search feature will help you find saved sites in no time at
+                        all. No need to crawl through all your brookmarks.</p>
+                    <button class="btn btn-violet hover-violet text-white mt-8">More info</button>
+                </div>
+
+                <div
+                    class="hidden lg:block overflow-hidden bg-Purple rounded-l-full w-1/2 h-80 -right-36 -bottom-28 absolute hover:bg-White transition">
+                </div>
+            </div>
+        </div>
+        <!-- feature #3 -->
+        <div class="relative mt-20 lg:mt-52 ">
+            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+
+                <!-- image -->
+                <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+                    <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                        src="./img/illustration-features-tab-3.png" alt="">
+                </div>
+
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start">
+                    <h1 class="text-3xl text-Blue">Share your bookmark</h1>
+                    <p class="text-Grey mt-4">Easily share your bookmarks and collections with others. Create a
+                        shareable link that you can send at the click of a button</p>
+                    <button class="btn btn-violet hover-violet text-white mt-8">More info</button>
+                </div>
+
+                <!-- rounded -->
+                <div
+                    class="hidden lg:block overflow-hidden bg-Purple rounded-r-full w-1/2 h-80 -left-32 top-48 absolute hover:bg-White transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- download -->
+    <section class="pt-20 mt-20" id="pricing">
+
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+            <h1 class="text-3xl text-center text-Blue">Download the extension</h1>
+            <p class="text-Grey text-center mt-4">We've got more browsers in the pipeline. Please do let us know if
+                you've got a favourite you'd like us to prioritize.</p>
+        </div>
+        <!-- cards -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-screen-lg mt-16 gap-16 mb-16">
+            <div class="flex flex-col lg:h-[22rem] rounded-md shadow-xl ">
+                <!-- card 2 -->
+                <div class="flex flex-col items-center p-6">
+                    <img src="./img/logo-chrome.svg" alt="">
+                    <h3 class="text-center text-Blue text-lg mt-2 mb-2">Add to chrome</h3>
+                    <p class="mb-2 text-Blue font-light">Minimum version 62</p>
+                </div>
+
+                <hr class="border-b border-White">
+                <div class="flex p-6">
+                    <button class=" flex-1 btn btn-violet hover-violet text-white mt-8">Add & Install Extension</button>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:h-[22rem] rounded-md shadow-xl lg:mt-20 ">
+                <!-- card 2 -->
+                <div class="flex flex-col items-center p-6">
+                    <img src="./img/logo-opera.svg" alt="">
+                    <h3 class="text-center text-Blue text-lg mt-2 mb-2">Add to chrome</h3>
+                    <p class="mb-2 text-Blue font-light">Minimum version 62</p>
+                </div>
+
+                <hr class="border-b border-White">
+                <div class="flex p-6">
+                    <button class=" flex-1 btn btn-violet hover-violet text-white mt-8">Add & Install Extension</button>
+                </div>
+            </div>
+
+            <div class="flex flex-col rounded-md shadow-xl lg:mt-40  lg:h-[22rem]">
+                <!-- card 3 -->
+                <div class="flex flex-col items-center p-6">
+                    <img src="./img/logo-firefox.svg" alt="">
+                    <h3 class="text-center text-Blue text-lg mt-2 mb-2">Add to chrome</h3>
+                    <p class="mb-2 text-Blue font-light">Minimum version 62</p>
+                </div>
+
+                <hr class="border-b border-White">
+                <div class="flex p-6">
+                    <button class="flex-1 btn btn-violet hover-violet text-white mt-8">Add & Install Extension</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-white">
+        <div class="container">
+            <!-- header -->
+            <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+                <h1 class="text-3xl text-center text-Blue">Frequently Asked Questions</h1>
+                <p class="text-Grey text-center mt-4">Here are some of our FAQs. If you have any other questions you'd
+                    like answered please feel free to email us.</p>
+            </div>
+            <!-- FAQ items -->
+            <div class="flex flex-col md:w-3/4 lg:w-5/12 mt-20 mx-auto mb-20">
+                <div class="flex item-center border-b py-4">
+                    <span class="flex-1">What is bookmark?</span>
+                    <i class="text-Purple fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="flex item-center border-b py-4">
+                    <span class="flex-1">How can I request a new browser?</span>
+                    <i class="text-Purple fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="flex item-center border-b py-4">
+                    <span class="flex-1">Is there a mobile app?</span>
+                    <i class="text-Purple fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="flex item-center border-b py-4">
+                    <span class="flex-1">What about other Chromium browsers?</span>
+                    <i class="text-Purple fa-solid fa-chevron-down"></i>
+                </div>
+                <button class="flex self-center btn btn-violet hover-violet text-white mt-12">More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="bg-Purple text-white py-20" id="contact">
+        <div class="container">
+            <div class="sm:w-3/4 lg:w-[55%] mx-auto">
+                <p class=" font-light text-center uppercase mb-8">35,000+ already joined</p>
+                <h1 class="text-center text-3xl">Stay up-to-date with what we're doing</h1>
+                <div class="flex flex-col sm:flex-row gap-6 mt-8">
+                    <input 
+                    type="text" 
+                    placeholder="Enter your email address" 
+                    class="flex-1 py-3 px-2 focus:outline-none text-black rounded-md">
+
+                    <button class="flex btn bg-Red hover-violet text-white self-center">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-Blue py-12">
+        <div class="container flex flex-col md:flex-row item-center">
+            <div class="flex flex-1 flex-wrap gap-12 items-center justify-center md:justify-start">
+                <img src="./img/logo-bookmark-white.png" alt="">
+                <ul class="flex text-white uppercase text-xs gap-12">
+                    <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#feature">Feature</a></li>
+                    <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#pricing">Pricing</a></li>
+                    <li class="cursor-pointer hover:text-Purple hover:underline hover:underline-offset-8 transition"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex mt-12 gap-10 md:mt-0 list-none mx-auto">
+                <li><i class="text-white hover:text-Purple transition text-2xl fab fa-twitter"></i></li>
+                <li><i class="text-white hover:text-Purple transition text-2xl fab fa-facebook"></i></li>
+                <li><i class="text-white hover:text-Purple transition text-2xl fab fa-tiktok"></i></li>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // event listener that listens for scroll events
+        window.addEventListener("scroll", function () {
+
+            // this gets the progress bar element
+            const progressBar = document.getElementById("scroll-progress");
+
+            // calculates the total height of the scrollable content on the page
+            const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+            // calculate the current scroll position
+            const scrolled = window.scrollY;
+
+            // calculate the progress of the scroll position
+            const progress = (scrolled / scrollableHeight) * 100;
+
+            // sets the width of the progress bar
+            progressBar.style.width = progress + "%";
+
+        });
+
+$("*").addClass("animated shake");
+
+    </script>
+</body>
+
+</html>
