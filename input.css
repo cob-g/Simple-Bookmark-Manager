@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+    border: 2px solid red;
+} */
+
+.btn {
+    @apply shadow-md px-6 py-3 rounded-md transition duration-300;
+}
+
+.btn-violet {
+    @apply bg-Purple text-white;
+}
+
+.btn-white {
+    @apply bg-White ;
+}
+
+.hover-violet {
+    @apply hover:bg-White hover:text-black
+}
